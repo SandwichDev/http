@@ -8,11 +8,12 @@ import (
 	"crypto/tls"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"net/url"
 	"reflect"
 	"strings"
 	"testing"
+
+	"github.com/SandwichDev/http"
 )
 
 func TestNewRequest(t *testing.T) {

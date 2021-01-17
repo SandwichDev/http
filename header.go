@@ -7,12 +7,13 @@ package http
 import (
 	"fmt"
 	"io"
-	"net/http/httptrace"
 	"net/textproto"
 	"sort"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/SandwichDev/http/httptrace"
 )
 
 // A Header represents the key-value pairs in an HTTP header.

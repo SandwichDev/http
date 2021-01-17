@@ -10,9 +10,10 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"os"
 	"os/signal"
+
+	"github.com/SandwichDev/http"
 )
 
 func ExampleHijacker() {

@@ -14,7 +14,6 @@ import (
 	"io"
 	"io/ioutil"
 	"mime/multipart"
-	. "net/http"
 	"net/http/httptest"
 	"net/url"
 	"os"
@@ -22,6 +21,8 @@ import (
 	"regexp"
 	"strings"
 	"testing"
+
+	. "github.com/SandwichDev/http"
 )
 
 func TestQuery(t *testing.T) {

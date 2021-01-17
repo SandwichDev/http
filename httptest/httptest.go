@@ -11,8 +11,9 @@ import (
 	"crypto/tls"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"strings"
+
+	"github.com/SandwichDev/http"
 )
 
 // NewRequest returns a new incoming server Request, suitable

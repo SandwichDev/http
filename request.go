@@ -19,13 +19,14 @@ import (
 	"mime"
 	"mime/multipart"
 	"net"
-	"net/http/httptrace"
 	"net/textproto"
 	"net/url"
 	urlpkg "net/url"
 	"strconv"
 	"strings"
 	"sync"
+
+	"github.com/SandwichDev/http/httptrace"
 
 	"golang.org/x/net/idna"
 )

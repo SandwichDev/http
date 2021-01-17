@@ -10,11 +10,12 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	. "net/http"
 	"reflect"
 	"strconv"
 	"strings"
 	"testing"
+
+	. "github.com/SandwichDev/http"
 )
 
 var sniffTests = []struct {

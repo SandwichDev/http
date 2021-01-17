@@ -13,12 +13,13 @@ import (
 	"io"
 	"io/ioutil"
 	"net"
-	"net/http"
 	"net/http/cgi"
 	"os"
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 // request holds the state for an in-progress request. As soon as it's complete,

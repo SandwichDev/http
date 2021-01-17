@@ -15,7 +15,6 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"net/http/httptest"
 	"net/url"
 	"os"
@@ -26,6 +25,8 @@ import (
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 const fakeHopHeader = "X-Fake-Hop-Header-For-Test"

@@ -8,11 +8,12 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"net/http/httptest"
 	"net/http/httputil"
 	"net/url"
 	"strings"
+
+	"github.com/SandwichDev/http"
 )
 
 func ExampleDumpRequest() {

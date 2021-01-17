@@ -9,9 +9,10 @@ import (
 	"errors"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"strings"
 	"testing"
+
+	"github.com/SandwichDev/http"
 )
 
 var sizeTests = []struct {

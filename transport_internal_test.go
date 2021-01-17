@@ -13,9 +13,10 @@ import (
 	"io"
 	"io/ioutil"
 	"net"
-	"net/http/internal"
 	"strings"
 	"testing"
+
+	"github.com/SandwichDev/http/internal"
 )
 
 // Issue 15446: incorrect wrapping of errors when server closes an idle connection.

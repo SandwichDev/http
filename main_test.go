@@ -8,13 +8,14 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"net/http"
 	"os"
 	"runtime"
 	"sort"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 var quietLog = log.New(ioutil.Discard, "", 0)

@@ -8,8 +8,9 @@ import (
 	"bufio"
 	"io/ioutil"
 	"net"
-	"net/http"
 	"testing"
+
+	"github.com/SandwichDev/http"
 )
 
 type newServerFunc func(http.Handler) *Server

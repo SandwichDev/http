@@ -13,7 +13,7 @@
 //	import _ "net/http/pprof"
 //
 // If your application is not already running an http server, you
-// need to start one. Add "net/http" and "log" to your imports and
+// need to start one. Add "github.com/SandwichDev/http" and "log" to your imports and
 // the following code to your main function:
 //
 // 	go func() {
@@ -65,7 +65,6 @@ import (
 	"internal/profile"
 	"io"
 	"log"
-	"net/http"
 	"os"
 	"runtime"
 	"runtime/pprof"
@@ -74,6 +73,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 func init() {

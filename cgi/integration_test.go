@@ -14,13 +14,14 @@ import (
 	"fmt"
 	"internal/testenv"
 	"io"
-	"net/http"
 	"net/http/httptest"
 	"net/url"
 	"os"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 // This test is a CGI host (testing host.go) that runs its own binary

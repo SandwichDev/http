@@ -26,11 +26,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net"
-	. "net/http"
-	"net/http/httptest"
-	"net/http/httptrace"
-	"net/http/httputil"
-	"net/http/internal"
 	"net/textproto"
 	"net/url"
 	"os"
@@ -42,6 +37,12 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	. "github.com/SandwichDev/http"
+	"github.com/SandwichDev/http/httptest"
+	"github.com/SandwichDev/http/httptrace"
+	"github.com/SandwichDev/http/httputil"
+	"github.com/SandwichDev/http/internal"
 
 	"golang.org/x/net/http/httpguts"
 )

@@ -8,8 +8,9 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"testing"
+
+	"github.com/SandwichDev/http"
 )
 
 func TestRecorder(t *testing.T) {

@@ -12,7 +12,6 @@ import (
 	"fmt"
 	"io"
 	"net"
-	"net/http"
 	"net/http/httptest"
 	"os"
 	"os/exec"
@@ -23,6 +22,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 func newRequest(httpreq string) *http.Request {

@@ -18,9 +18,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net"
-	. "net/http"
-	"net/http/httptest"
-	"net/http/httputil"
 	"net/url"
 	"os"
 	"reflect"
@@ -31,6 +28,10 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	. "github.com/SandwichDev/http"
+	"github.com/SandwichDev/http/httptest"
+	"github.com/SandwichDev/http/httputil"
 )
 
 type clientServerTest struct {

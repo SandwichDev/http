@@ -9,7 +9,6 @@ import (
 	"fmt"
 	"internal/profile"
 	"io/ioutil"
-	"net/http"
 	"net/http/httptest"
 	"runtime"
 	"runtime/pprof"
@@ -18,6 +17,8 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/http"
 )
 
 // TestDescriptions checks that the profile names under runtime/pprof package

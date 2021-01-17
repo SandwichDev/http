@@ -22,10 +22,6 @@ import (
 	"log"
 	"math/rand"
 	"net"
-	. "net/http"
-	"net/http/httptest"
-	"net/http/httputil"
-	"net/http/internal"
 	"net/url"
 	"os"
 	"os/exec"
@@ -41,6 +37,11 @@ import (
 	"syscall"
 	"testing"
 	"time"
+
+	. "github.com/SandwichDev/http"
+	"github.com/SandwichDev/http/httptest"
+	"github.com/SandwichDev/http/httputil"
+	"github.com/SandwichDev/http/internal"
 )
 
 type dummyAddr string
