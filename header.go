@@ -241,6 +241,7 @@ func (h Header) writeSubset(w io.Writer, exclude map[string]bool, trace *httptra
 	var kvs []keyValues
 	var sorter *headerSorter
 	// Check if the HeaderOrder is defined.
+	fmt.Println(h)
 	if headerOrder, ok := h[HeaderOrderKey]; ok {
 		order := make(map[string]int)
 		fmt.Println("Header Order Key Found")
