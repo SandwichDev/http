@@ -62,7 +62,6 @@ import (
 	"context"
 	"fmt"
 	"html/template"
-	"internal/profile"
 	"io"
 	"log"
 	"os"
@@ -73,6 +72,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/SandwichDev/go-internals/profile"
 
 	"github.com/SandwichDev/http"
 )

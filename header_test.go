@@ -6,11 +6,12 @@ package http
 
 import (
 	"bytes"
-	"internal/race"
 	"reflect"
 	"runtime"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/race"
 )
 
 var headerWriteTests = []struct {

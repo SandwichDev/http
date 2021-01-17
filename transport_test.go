@@ -21,7 +21,6 @@ import (
 	"errors"
 	"fmt"
 	"go/token"
-	"internal/nettrace"
 	"io"
 	"io/ioutil"
 	"log"
@@ -37,6 +36,8 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/nettrace"
 
 	. "github.com/SandwichDev/http"
 	"github.com/SandwichDev/http/httptest"

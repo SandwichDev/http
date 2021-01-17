@@ -16,7 +16,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"internal/testenv"
 	"io"
 	"io/ioutil"
 	"log"
@@ -37,6 +36,8 @@ import (
 	"syscall"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/testenv"
 
 	. "github.com/SandwichDev/http"
 	"github.com/SandwichDev/http/httptest"

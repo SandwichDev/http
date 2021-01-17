@@ -7,7 +7,6 @@ package pprof
 import (
 	"bytes"
 	"fmt"
-	"internal/profile"
 	"io/ioutil"
 	"net/http/httptest"
 	"runtime"
@@ -17,6 +16,8 @@ import (
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/profile"
 
 	"github.com/SandwichDev/http"
 )

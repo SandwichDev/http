@@ -12,7 +12,6 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"internal/testenv"
 	"io"
 	"net/http/httptest"
 	"net/url"
@@ -20,6 +19,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/testenv"
 
 	"github.com/SandwichDev/http"
 )

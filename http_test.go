@@ -8,12 +8,13 @@ package http
 
 import (
 	"bytes"
-	"internal/testenv"
 	"net/url"
 	"os/exec"
 	"reflect"
 	"testing"
 	"time"
+
+	"github.com/SandwichDev/go-internals/testenv"
 )
 
 func init() {
