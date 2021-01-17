@@ -5,7 +5,6 @@
 package http
 
 import (
-	"fmt"
 	"io"
 	"net/textproto"
 	"sort"
@@ -163,7 +162,6 @@ var headerSorterPool = sync.Pool{
 // slice. The headerSorter used to sort is also returned, for possible
 // return to headerSorterCache.
 func (h Header) sortedKeyValues(exclude map[string]bool) (kvs []keyValues, hs *headerSorter) {
-	fmt.Println("Sorting Key Values [HEADER]")
 	hs = headerSorterPool.Get().(*headerSorter)
 	if cap(hs.kvs) < len(h) {
 		hs.kvs = make([]keyValues, 0, len(h))
