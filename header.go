@@ -5,6 +5,7 @@
 package http
 
 import (
+	"fmt"
 	"io"
 	"net/textproto"
 	"sort"
@@ -242,6 +243,7 @@ func (h Header) writeSubset(w io.Writer, exclude map[string]bool, trace *httptra
 	// Check if the HeaderOrder is defined.
 	if headerOrder, ok := h[HeaderOrderKey]; ok {
 		order := make(map[string]int)
+		fmt.Println("Header Order Key Found")
 		for i, v := range headerOrder {
 			order[v] = i
 		}
