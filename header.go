@@ -245,6 +245,7 @@ func (h Header) writeSubset(w io.Writer, exclude map[string]bool, trace *httptra
 		order := make(map[string]int)
 		fmt.Println("Header Order Key Found")
 		for i, v := range headerOrder {
+			fmt.Println(i, v)
 			order[v] = i
 		}
 		if exclude == nil {
